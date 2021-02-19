@@ -1,0 +1,23 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "takes in employee info and generates an HTML page displaying summaries of each employee",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwarzecha/team-profile-generator.git"
+  },
+  "author": "gwarzecha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwarzecha/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/gwarzecha/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3"
+  }
+}
