@@ -4,7 +4,9 @@ const Manager = require('./lib/Manager');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const page = require('./dist/output.html');
+const generateHtml = require('./lib/generateHtml');
+
+
 
 
 const employees = [];
@@ -94,10 +96,13 @@ function addAnother() {
       newEmployee()
     } else {
       console.log('Employees added')
-      //fs.writeFile('./dist/output.html', employees, (err) => {
-       // if (err) throw err;
+      //fs.writeFile( , , (err) => {
+        //if (err) throw err;
+        //else{
+          //;
+        }
       //});
-    }
+    //}
   })
 }
 
