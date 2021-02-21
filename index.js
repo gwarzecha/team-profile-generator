@@ -7,8 +7,6 @@ const inquirer = require('inquirer');
 const generateHtml = require('./lib/generateHtml');
 
 
-
-
 const employees = [];
 
 function newEmployee() {
@@ -80,7 +78,7 @@ function newEmployee() {
         })
       }
     })
-}
+};
 
 function addAnother() {
   inquirer.prompt([
@@ -96,14 +94,14 @@ function addAnother() {
       newEmployee()
     } else {
       console.log('Employees added')
-      //fs.writeFile( , , (err) => {
-        //if (err) throw err;
-        //else{
-          //;
-        }
-      //});
-    //}
+      // pass employee array to generateHtml
+      const employeeString = generateHtml(employees);
+      fs.writeFile('./dist/output.html', employeeString, function(err) {
+        console.error(err);
+
+      });
+    }
   })
-}
+};
 
 newEmployee();
