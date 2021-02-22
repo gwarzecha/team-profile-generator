@@ -44,8 +44,7 @@ function newEmployee() {
         ])
           .then((additional) => {
             const engineer = new Engineer(responses.name, responses.id, responses.email, additional.github);
-            employees.push(engineer);
-            console.log(employees);
+            employees.push(engineer);  
             addAnother();
           })
       } else if (responses.role === 'Intern') {
@@ -59,7 +58,6 @@ function newEmployee() {
         .then((additional) => {
           const intern = new Intern(responses.name, responses.id, responses.email, additional.school);
           employees.push(intern);
-          console.log(employees);
           addAnother();
         })
       } else if (responses.role === 'Manager') {
@@ -72,8 +70,7 @@ function newEmployee() {
         ])
         .then((additional) => {
           const manager = new Manager(responses.name, responses.id, responses.email, additional.office);
-          employees.push(manager);
-          console.log(employees);
+          employees.push(manager);         
           addAnother();
         })
       }
@@ -89,7 +86,6 @@ function addAnother() {
     }
   ])
   .then((answer) => {
-    console.log(answer)
     if (answer.another) {
       newEmployee()
     } else {
