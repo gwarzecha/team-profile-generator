@@ -1,8 +1,6 @@
-/*
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Jost', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   width: 100%;
@@ -11,6 +9,10 @@ body {
 .container {
   display: inline-block;
   width: 100%;
+}
+
+.brand-logo {
+  font-family: 'Raleway', sans-serif;
 }
 
 .card{ 
@@ -23,9 +25,8 @@ body {
 }
 
 #eng, #int, #man {
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
-
 
 
 .card-name {
